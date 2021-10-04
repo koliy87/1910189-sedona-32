@@ -1,0 +1,21 @@
+.background-logo {
+  color: white;
+  background-color: black;
+  background-image: url("../images/index/air-background.jpg");
+  width: 1200px;
+  height: 485px;
+}
+.news {
+  background-image: url("../images/index/background-footer.jpg");
+  background-color: black;
+  color: white;
+  width: 1200px;
+  height: 411px;
+}
+.background {
+  background-image: url("../images/Catalog/catalog-background.jpg");
+  background-color: black;
+  color: white;
+  width: 1200px;
+  height: 408px;
+}
