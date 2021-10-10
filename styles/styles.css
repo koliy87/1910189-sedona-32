@@ -12,12 +12,56 @@
   src: url("../fonts/ptsans-700.woff2") format(woff2);
   font-display: swap;
 }
+html{
+  height: 100%;
+}
 body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
+  background-color:#F2F2F2;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+.page-header{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
   background-color: #FFFFFF;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+.navigation{
+  width: 400px;
+  margin-right: auto;
+  margin-left: 71px;
+}
+.arms{
+  width: 138px;
+}
+.user{
+  width: 400px;
+  margin-left: auto;
+  margin-right: 72px;
+}
+.main-container{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #FFFFFF;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+.logo{
+  display: block;
+  margin: 0 auto;
 }
 .navigation{
   font-weight: 700;
@@ -38,28 +82,65 @@ body{
   text-decoration: none;
 }
 .slogan{
+  width: 720px;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
 }
-.adventeges{
+.adventeges-item{
+  display: flex;
+  margin-left: -40px;
+  width: 1200px;
+  text-align: center;
+  color: #333333;
+}
+.block-blue{
+  width: 400px;
+}
+.adventeges-description1{
+  width: 220px;
+  height: 73px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.services-conteiner{
+  display: flex;
+  margin-left: -80px;
+  width: 1200px;
+  justify-content: space-between;
+}
+.adventeges-conteiner2{
+  display: flex;
+  width: 1200px;
+  margin-left: -20px;
+}
+
+.services-list{
   text-align: center;
   color: #333333;
 }
 .adventeges-caption{
+  text-align: center;
   line-height: 36px;
 }
-.block1{
+.block-blue{
   color: #FFFFFF;
   background-color: #83B3D3;
 }
-.block2{
+.block-light{
   background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  margin: 0 auto;
 }
-.block3{
+.block-cold{
   background-color: rgba(131, 179, 211, 0.2);
+  width: 400px;
+  margin: 0 auto;
 }
 .adventeges-title,
 .services-title{
@@ -71,14 +152,14 @@ body{
 .number,
 .adventeges-description,
 .services-description{
+  width: 250px;
+  height: 73px;
+  margin: 0 auto;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 .number1{
-  color: #FFFFFF;
-}
-.adventeges-description1{
   color: #FFFFFF;
 }
 .booking{
@@ -91,6 +172,8 @@ body{
   font-weight:700;
 }
 .booking-description{
+  width: 720px;
+  margin: 0 auto;
   color: #333333;
 }
 .button-catalog{
@@ -116,17 +199,43 @@ body{
   font-weight: 700;
   text-transform: uppercase;
 }
+.newsletter-description{
+  width: 720px;
+  margin: 0 auto;
+}
 .newsletter-button{
   font-size: 20px;
   text-transform: uppercase;
   background-color: #83B3D3;
   color: #FFFFFF;
 }
+.page-footer-container{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  justify-content: space-between;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+.footer-social{
+  width: 150px;
+  margin-left: 71px;
+  margin-right: auto;
+}
+.footer-phone{
+  text-align: center;
+  width: 720px;
+}
+.htmlacademy-link{
+  width: 150px;
+  margin-left: auto;
+  margin-right: 71px;
+}
 .footer-contacts-phone{
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
-  text-align: center;
   color: #000000;
   text-decoration: none;
 }
@@ -260,22 +369,23 @@ body{
   color: #333333;
 }
 .background-logo {
-  color: white;
-  background-color: black;
+  color: #FFFFFF;;
+  background-color:#000000;
   background-image: url("../images/index/air-background.jpg");
   width: 1200px;
   height: 485px;
+  margin: 0 auto;
 }
 .news {
   background-image: url("../images/index/background-footer.jpg");
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #FFFFFF;;
   width: 1200px;
   height: 411px;
 }
 .background {
-  background-image: url("../images/Catalog/catalog-background.jpg");
-  background-color: black;
-  color: white;
+  background-image: url("../images/index/catalog-background.jpg");
+  background-color: #000000;
+  color: #FFFFFF;;
   background-size: 100% 100%;
 }
