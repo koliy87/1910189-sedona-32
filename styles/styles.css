@@ -240,7 +240,23 @@ body{
   text-decoration: none;
 }
 .catalog-filter{
+  width: 1056px;
+  margin: 0 auto;
   color: #FFFFFF;
+}
+.catalog-container{
+  display: flex;
+}
+.page-container-inner{
+  width: 1056px;
+  margin: 0 auto;
+}
+.product-list{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 .inner-header-title{
   font-size: 60px;
@@ -329,10 +345,12 @@ body{
   text-decoration: none;
 }
 .pagination-show-more{
+  display: block;
+  width: 625px;
+  margin: 0 auto;
   font-size: 20px;
   line-height: 26px;
   font-weight:700;
-  text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #83B3D3;
