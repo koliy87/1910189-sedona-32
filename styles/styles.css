@@ -12,6 +12,16 @@
   src: url("../fonts/ptsans-700.woff2") format(woff2);
   font-display: swap;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 html{
   height: 100%;
 }
@@ -20,7 +30,7 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
@@ -30,24 +40,47 @@ body{
 }
 .page-header{
   display: flex;
+  box-sizing: border-box;
+  padding-left: 71px;
+  padding-right: 71px;
   width: 1200px;
+  justify-content: space-between;
   margin: 0 auto;
   background-color: #FFFFFF;
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
 .navigation{
-  width: 400px;
+  width: 530px;
   margin-right: auto;
-  margin-left: 71px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.navigation-list{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding-inline-start: 0;
+  padding-top: 19px;
+}
+.navigation-item{
+  padding-right: 33px;
 }
 .arms{
-  width: 138px;
+  width: 140px;
 }
-.user{
-  width: 400px;
+.user-list{
+  width: 530px;
   margin-left: auto;
-  margin-right: 72px;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  align-items: baseline;
+  margin: 0;
+  padding-top: 14px;
+}
+.user-item{
+  padding-left: 20px;
 }
 .main-container{
   display: flex;
@@ -62,10 +95,7 @@ body{
 .logo{
   display: block;
   margin: 0 auto;
-}
-.navigation{
-  font-weight: 700;
-  font-size: 20px;
+  padding-top: 51px;
 }
 .navigation-link{
   color: #000000;
@@ -80,6 +110,12 @@ body{
   font-weight:700;
   background-color: #756257;
   text-decoration: none;
+  width: 160px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .slogan{
   width: 720px;
@@ -89,16 +125,30 @@ body{
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 23px;
+}
+.adventeges-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.services-item{
+  display: flex;
+  flex-direction: column;
+}
+
+.icon{
+  margin: 0 auto;
+  padding-top: 89px;
 }
 .adventeges-item{
   display: flex;
-  margin-left: -40px;
+  flex-direction: column;
   width: 1200px;
   text-align: center;
   color: #333333;
-}
-.block-blue{
-  width: 400px;
 }
 .adventeges-description1{
   width: 220px;
@@ -107,6 +157,7 @@ body{
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
+  padding-top: 26px;
 }
 .services-conteiner{
   display: flex;
@@ -127,6 +178,8 @@ body{
 .adventeges-caption{
   text-align: center;
   line-height: 36px;
+  margin: 0;
+  margin-bottom: 79px;
 }
 .block-blue{
   color: #FFFFFF;
@@ -135,22 +188,46 @@ body{
 .block-light{
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
-  margin: 0 auto;
 }
 .block-cold{
   background-color: rgba(131, 179, 211, 0.2);
   width: 400px;
   margin: 0 auto;
 }
-.adventeges-title,
-.services-title{
+.adventeges-title{
+  margin: 0;
+  padding-top: 98px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   font-weight: 700;
 }
-.number,
-.adventeges-description,
+.services-title{
+  margin: 0 auto;
+  padding-top: 23px;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.adventeges-description{
+  width: 250px;
+  height: 73px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  padding-top: 26px;
+  padding-bottom: 77px;
+}
+.number{
+  width: 250px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  padding-top: 25px;
+}
 .services-description{
   width: 250px;
   height: 73px;
@@ -158,23 +235,34 @@ body{
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 79px;
 }
 .number1{
   color: #FFFFFF;
+  margin: 0;
+  padding-top: 25px;
 }
 .booking{
   text-align: center;
+  padding-bottom: 91px;
 }
 .booking-title{
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   font-weight:700;
+  margin: 0;
+  padding-top: 91px;
+  height: 50px;
 }
 .booking-description{
   width: 720px;
   margin: 0 auto;
   color: #333333;
+  padding-top: 15px;
+  padding-bottom: 70px;
 }
 .button-catalog{
   font-size: 20px;
@@ -182,32 +270,86 @@ body{
   text-transform: uppercase;
   color: #FFFFFF;
   font-weight: 700;
-  background-color: #756257;
   text-decoration: none;
+  padding-top: 13px;
+  padding-bottom: 17px;
+  margin: 0 auto;
+  width: 160px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.button-booking-catalog{
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-decoration: none;
+  padding-top: 13px;
+  padding-bottom: 17px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #756257;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .news{
   text-align: center;
   color: #FFFFFF;
 }
 .news-inner{
+  padding-bottom: 138px;
   text-align: center;
   color: #000000
+
 }
 .newsletter-title{
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 94px;
+  height: 50px;
 }
 .newsletter-description{
   width: 720px;
   margin: 0 auto;
+  padding-top: 15px;
+  height: 72px;
+}
+.newsletter-email{
+  display: flex;
+  box-sizing: border-box;
+  width: 800px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 26px;
+}
+.field{
+  width: 600px;
+  border: 0;
+  margin: 0;
+  padding-left: 22px;
+  border-radius: 10px 0 0 10px;
+}
+.field-inner{
+  width: 600px;
+  border: 0;
+  margin: 0;
+  padding-left: 22px;
+  border-radius: 10px 0 0 10px;
+  background-color: #F2F2F2;;
 }
 .newsletter-button{
   font-size: 20px;
   text-transform: uppercase;
   background-color: #83B3D3;
   color: #FFFFFF;
+  border: 0;
+  margin: 0;
+  border-radius: 0 10px 10px 0;
 }
 .page-footer-container{
   display: flex;
@@ -217,11 +359,18 @@ body{
   justify-content: space-between;
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  align-items: baseline;
 }
 .footer-social{
   width: 150px;
   margin-left: 71px;
   margin-right: auto;
+  display: flex;
+}
+.footer-social-list{
+  list-style-type: none;
 }
 .footer-phone{
   text-align: center;
@@ -243,9 +392,12 @@ body{
   width: 1056px;
   margin: 0 auto;
   color: #FFFFFF;
+  padding-top: 35px;
+  padding-bottom: 86px;
 }
 .catalog-container{
   display: flex;
+  padding-top: 45px;
 }
 .page-container-inner{
   width: 1056px;
@@ -257,11 +409,24 @@ body{
   margin: 0 auto;
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
+  list-style-type: none;
+  padding-inline-start: 0;
 }
 .inner-header-title{
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+  margin: 0;
+}
+.breadcrumbs{
+  margin: 0;
+  padding-left: 0;
+  padding-top: 5px;
+  display: flex;
+  list-style-type: none;
+}
+.breadcrumbs-item{
+  padding-right: 20px;
 }
 .breadcrumbs-link{
   font-size: 16px;
@@ -271,10 +436,23 @@ body{
   font-size: 20px;
   font-weight: 700;
 }
+.catalog-filter-group{
+  margin: 0;
+  padding: 0;
+  border: none;
+  padding-right: 50px;
+}
+.catalog-filter-list{
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin: 0;
+  padding-top: 30px;
+}
 .control-label{
   font-size: 18px;
   line-height: 23px;
 }
+
 .button-catalog1{
   font-size: 16px;
   line-height: 21px;
@@ -282,6 +460,9 @@ body{
   color: #FFFFFF;
   text-align: center;
   background-color: #83B3D3;
+  border-radius: 4px;
+  border: 0;
+  height: 48px;
 }
 .button-catalog2{
   font-size: 18px;
@@ -289,12 +470,39 @@ body{
   text-align: center;
   color: #FFFFFF;
   background-color: #11ffee00;
+  border-radius: 4px;
+  border: 0;
+  height: 48px;
+}
+.sorting-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 42px;
 }
 .sorting-description{
   font-size: 30px;
   line-height: 39px;
   text-transform: uppercase;
   font-weight:700;
+  margin: 0;
+}
+.sorting-button{
+  display: flex;
+}
+.sorting-button .button{
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+.sorting-button .button-list{
+  border: 2px solid #000000;
+}
+.mode{
+  padding: 16px;
 }
 .cheap{
   font-size: 18px;
@@ -344,6 +552,18 @@ body{
   background-color: #7DB54F;
   text-decoration: none;
 }
+.product-rating{
+  width: 160px;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 10px;
+  padding-top: 9px;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
 .pagination-show-more{
   display: block;
   width: 625px;
@@ -355,6 +575,36 @@ body{
   color: #FFFFFF;
   background-color: #83B3D3;
   text-decoration: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-radius: 4px;
+  border: 0;
+}
+.pagination-container{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.pagination{
+  padding-inline-start: 0;
+  list-style-type: none;
+  display: flex;
+}
+.pagination-item{
+  width: 55px;
+  height: 55px;
+  background-color: #83B3D3;
+  margin-left: 7px;
+  border-radius: 4px;
+}
+.pagination-item-current{
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  background-color: #E5E5E5;
+  border-radius: 4px;
 }
 .pagination-link-button{
   font-size: 20px;
@@ -363,8 +613,9 @@ body{
   text-transform: uppercase;
   font-weight:700;
   color: #FFFFFF;
-  background-color: #83B3D3;
   text-decoration: none;
+  display: block;
+  padding: 13px;
 }
 .pagination-current{
   font-size: 20px;
@@ -373,7 +624,6 @@ body{
   text-transform: uppercase;
   font-weight:700;
   color: #000000;
-  background-color: #E5E5E5;
   text-decoration: none;
 }
 .sorting-number{
@@ -381,10 +631,18 @@ body{
   line-height: 23px;
   color: #333333;
 }
+.select-sorting{
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+  width: 287px;
+}
 .select-control{
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+  width: 160px;
+  margin-left: 51px;
 }
 .background-logo {
   color: #FFFFFF;;
@@ -393,6 +651,7 @@ body{
   width: 1200px;
   height: 485px;
   margin: 0 auto;
+  margin-bottom: 63px;
 }
 .news {
   background-image: url("../images/index/background-footer.jpg");
