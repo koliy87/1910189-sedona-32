@@ -32,11 +32,51 @@
         </li>
         <li class="user-item">
           <a class="favourites" href="#">
-            <svg class="user-icon" width="31" height="27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8.9 27a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.5 10c1.3 0 2.5.5 3.5 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5L9 24.4l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/><path d="M31 9.5a9.5 9.5 0 1 1-19 0 9.5 9.5 0 0 1 19 0Z" fill="#7DB54F"/><path d="M17.6 12.3H19V7.4l.1-.6-.4.5-1 .8-.4-.5 2.2-1.7h.3v6.4h1.4v.7h-3.6v-.7Zm7.9-4.7-.2 1-.6 1.2a10.9 10.9 0 0 1-1.4 2.1l-.5.4h2.8v.7h-4v-.3a33.1 33.1 0 0 0 1.8-2.2 9.7 9.7 0 0 0 1-1.9c.2-.3.2-.6.2-.9 0-.3 0-.6-.3-.8-.1-.2-.4-.3-.8-.3l-.7.1-.7.4-.3-.6.8-.5a3 3 0 0 1 1-.1l.8.1a1.5 1.5 0 0 1 1 1v.6Z" fill="#fff"/>
+            <svg class="user-icon" width="19" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
+            </svg>
+            <svg class="ellips" width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: absolute;top: 9;right: -1px;">
+              <path d="M19 9.5a9.5 9.5 0 1 1-19 0 9.5 9.5 0 0 1 19 0Z">
+            </svg>
+            <svg class="number-icon" width="9" height="8" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: absolute;top: 13px;right: 4px;">
+              <path d="M.63 7.26h1.4V2.42l.1-.59-.4.47-1.1.79-.38-.51 2.2-1.7h.36v6.38h1.37V8H.63v-.74Zm7.83-4.67c0 .35-.07.72-.2 1.09a10.87 10.87 0 0 1-1.21 2.21c-.26.35-.52.69-.78 1.01l-.49.43v.04l.64-.11H8.6V8H4.62v-.29a33.38 33.38 0 0 0 1.17-1.32 15.12 15.12 0 0 0 1.25-1.83c.18-.32.32-.64.43-.95.1-.31.16-.61.16-.89 0-.33-.1-.6-.28-.81-.19-.22-.47-.33-.85-.33-.25 0-.5.05-.74.16-.24.1-.45.22-.62.35l-.33-.57c.23-.2.51-.36.83-.47.32-.11.66-.17 1.03-.17.29 0 .54.04.76.13a1.5 1.5 0 0 1 .91.9c.08.2.12.43.12.68Z">
             </svg>
             <span class="visually-hidden">Избранное</span>
           </a>
+            <div class="popover popover-cart">
+              <div class="popover-content">
+                <h2 class="popover-title visually-hidden">Избранное</h2>
+                <ul class="popover-content-list">
+                  <li class="popover-content-item">
+                    <div class="product-card-small">
+                      <div class="product-small-img-desert"></div>
+                      <h3 class="product-card-title-basket">Desert Quail Inn</h3>
+                      <span class="product-card-type-basket">Мотель</span>
+                    </div>
+                    <button class="basket">
+                      <svg class="basket-img" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z"/><path d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"/>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="popover-content-item">
+                    <div class="product-card-small">
+                      <div class="product-small-img-villas"></div>
+                      <h3 class="product-card-title-basket">Villas at Poco Diablo</h3>
+                      <span class="product-card-type-basket">Апатраменты</span>
+                    </div>
+                    <button class="basket">
+                      <svg class="basket-img" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z" fill="#000"/><path d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z" fill="#000"/>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <a class="button button-favourites" href="#">
+                <span class="name-favourites">Все избранные</span>
+              </a>
+            </div>
         </li>
         <li class="user-item">
           <a class="button button-booking" href="#">
@@ -136,7 +176,7 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button-social" href="https://twitter.com/htmlacademy_ru">
               <svg class="social-icon" aria-hidden="true" focusable="false" width="18" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11.6.2c1.8-.5 3.2.3 3.8 1.2.7-.2 1.4-.5 2.1-.7 0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6-.2 1-1.1 1.8-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9c1.9 1.9 4 3.6 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z"/>
               </svg>
@@ -144,7 +184,7 @@
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button-social" href="https://www.facebook.com/htmlacademy">
               <svg class="social-icon" aria-hidden="true" focusable="false" width="10" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 0a4 4 0 0 0-4 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z"/>
               </svg>
@@ -152,7 +192,7 @@
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button-social" href="https://www.youtube.com/c/HTMLAcademyRUS">
               <svg class="social-icon" aria-hidden="true" focusable="false" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z"/>
               </svg>
@@ -172,5 +212,64 @@
         <span class="visually-hidden">.html academy</span>
       </a>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-seach">
+        <button class="modal-close-button">
+          <svg class="close" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/>
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <h2 class="modal-title">Поиск гостиниц в Седоне</h2>
+        <form class="seach-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="field-group">
+            <label class="label-seach false" for="seach-date-enter">Дата заезда:</label>
+            <input class="seach-form-field" type="text" id="seach-date-enter" name="seach-date" value="27 апреля 2020" placeholder="Укажите дату">
+            <svg class="calendar" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5Zm2 0c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5Zm-4 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm-2-1c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5Zm0 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm4 0c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm2 0c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm2-1c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Zm0 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/>
+            </svg>
+          </div>
+          <div class="field-group">
+            <label class="label-seach true" for="seach-date-exit">Дата выезда:</label>
+            <input class="seach-form-field" type="text" id="seach-date-exit" name="seach-date" value="1 сентября 2021" placeholder="Укажите дату">
+            <svg class="calendar" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5Zm2 0c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5Zm-4 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm-2-1c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5Zm0 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm4 0c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm2 0c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm2-1c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Zm0 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/>
+            </svg>
+          </div>
+          <div class="people">
+            <div class="field-group">
+              <label class="label-seach" for="number-adults">Взрослые:</label>
+              <input class="seach-form-field adults" type="text" id="number-adults" name="number-adults" value="2" placeholder="">
+              <svg class="plus" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
+              </svg>
+              <svg class="minus" width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity=".3" d="M0 0v1h13V0H0Z"/>
+              </svg>
+            </div>
+            <div class="field-group">
+              <label class="label-seach label-children" for="number-children">Дети:
+                <button class="info" type="button">
+                  <span class="info-name">i</span>
+                </button>
+              </label>
+              <div class="popover-info">
+                <span class="content-info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </div>
+              <input class="seach-form-field children" type="text" id="number-children" name="number-children" value="1" placeholder="">
+              <svg class="plus" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
+              </svg>
+              <svg class="minus" width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity=".3" d="M0 0v1h13V0H0Z"/>
+              </svg>
+            </div>
+          </div>
+          <button class="seach-button">
+            <span class="name-seach-modal">Найти</span>
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
