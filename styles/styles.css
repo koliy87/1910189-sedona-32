@@ -1633,7 +1633,7 @@ opacity: 0.6;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-  display: none;
+  display: non;
 }
 .modal {
   position: relative;
@@ -1797,7 +1797,7 @@ opacity: 0.6;
   background-color: #333333;
   padding-right: 18px;
   padding-left: 22px;
-  padding-top: 15px;
+  padding-top: 19px;
   padding-bottom: 25px;
   position: absolute;
   border-radius: 10px;
