@@ -52,6 +52,7 @@ nav {
 }
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding-inline-start: 0;
@@ -68,6 +69,7 @@ nav {
 .user-list {
   width: 530px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   list-style-type: none;
   align-items: center;
@@ -231,26 +233,15 @@ margin-top: 10px;
   text-align: center;
   color: #333333;
 }
-.adventeges-description1 {
+.adventeges-description-blue {
   width: 220px;
   height: 73px;
   margin: 0 auto;
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
-  padding-top: 29px;
-  box-sizing: border-box;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.adventeges-description-2 {
-  width: 220px;
-  height: 73px;
-  margin: 0 auto;
-  font-size: 18px;
-  line-height: 21px;
-  color: #FFFFFF;
-  padding-top: 29px;
+  padding-top: 30px;
+  padding-bottom: 77px;
 }
 .services-conteiner {
   display: flex;
@@ -263,7 +254,6 @@ margin-top: 10px;
   width: 1200px;
   margin-left: -20px;
 }
-
 .services-list {
   text-align: center;
   color: #333333;
@@ -279,6 +269,8 @@ margin-top: 10px;
   background-color: #83B3D3;
   padding-left: 90px;
   padding-right: 90px;
+  width: 400px;
+  box-sizing: border-box;
 }
 .block-light {
   background-color: rgba(131, 179, 211, 0.12);
@@ -302,20 +294,6 @@ margin-top: 10px;
   line-height: 28px;
   text-transform: uppercase;
   font-weight: 700;
-  box-sizing: border-box;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-.adventeges-title-5 {
-  margin: 0;
-  padding-top: 99px;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  font-weight: 700;
-  box-sizing: border-box;
-  padding-left: 35px;
-  padding-right: 35px;
 }
 .services-title {
   margin: 0 auto;
@@ -341,7 +319,7 @@ margin-top: 10px;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  padding-top: 27px;
+  padding-top: 25px;
 }
 .services-description {
   width: 250px;
@@ -352,9 +330,6 @@ margin-top: 10px;
   padding-top: 20px;
   text-align: center;
   padding-bottom: 88px;
-  box-sizing: border-box;
-  padding-left: 35px;
-  padding-right: 38px;
 }
 .services-description-eat {
   width: 250px;
@@ -609,6 +584,7 @@ margin-top: 10px;
 .footer-social-list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   padding-inline-start: 0;
   margin: 0;
   align-items: baseline;
