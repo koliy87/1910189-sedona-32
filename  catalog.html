@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles/styles.css">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="fon">
     <header class="page-header">
       <nav>
         <ul class="navigation-list">
@@ -20,12 +21,14 @@
           </li>
         </ul>
       </nav>
-      <a class="arms" href="index.html"><img class="gerb" src="images/index/sedona.svg" alt="Герб Седоны" width="138" height="70"></a>
+      <a class="arms" href="index.html"><img class="gerb" src="images/index/sedona.svg" alt="Герб Седоны" width="138"
+          height="70"></a>
       <ul class="user-list">
         <li class="user-item">
           <a class="search" href="#">
             <svg class="user-icon" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="m18 16.5-3.7-3.7A8 8 0 0 0 8-.1C3.6-.1 0 3.6 0 8a8 8 0 0 0 12.9 6.3l3.7 3.7 1.4-1.5ZM8 14a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6Z"/>
+              <path
+                d="m18 16.5-3.7-3.7A8 8 0 0 0 8-.1C3.6-.1 0 3.6 0 8a8 8 0 0 0 12.9 6.3l3.7 3.7 1.4-1.5ZM8 14a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6Z" />
             </svg>
             <span class="visually-hidden">Поиск</span>
           </a>
@@ -33,21 +36,14 @@
         <li class="user-item">
           <a class="favourites" href="#">
             <svg class="user-icon" width="19" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
-            </svg>
-            <svg data-number-index="12" class="ellips" width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: absolute;top: 9;right: -1px;">
-              <path d="M19 9.5a9.5 9.5 0 1 1-19 0 9.5 9.5 0 0 1 19 0Z">
-            </svg>
-            <svg class="number-icon" width="9" height="8" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: absolute;top: 13px;right: 4px;">
-              <path d="M.63 7.26h1.4V2.42l.1-.59-.4.47-1.1.79-.38-.51 2.2-1.7h.36v6.38h1.37V8H.63v-.74Zm7.83-4.67c0 .35-.07.72-.2 1.09a10.87 10.87 0 0 1-1.21 2.21c-.26.35-.52.69-.78 1.01l-.49.43v.04l.64-.11H8.6V8H4.62v-.29a33.38 33.38 0 0 0 1.17-1.32 15.12 15.12 0 0 0 1.25-1.83c.18-.32.32-.64.43-.95.1-.31.16-.61.16-.89 0-.33-.1-.6-.28-.81-.19-.22-.47-.33-.85-.33-.25 0-.5.05-.74.16-.24.1-.45.22-.62.35l-.33-.57c.23-.2.51-.36.83-.47.32-.11.66-.17 1.03-.17.29 0 .54.04.76.13a1.5 1.5 0 0 1 .91.9c.08.2.12.43.12.68Z">
+              <path
+                d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
             </svg>
             <span class="visually-hidden">Избранное</span>
           </a>
         </li>
         <li class="user-item">
-          <a class="button button-booking" href="#">
-            <span class="name">Хочу сюда!</span>
-          </a>
+          <a class="button button-booking" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </header>
@@ -57,8 +53,9 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link home" href="index.html">
-              <svg class="breadсrumbs-icon"  width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 .3 0 5.8V12h12V5.8L6 .3ZM11 11H1V6.2l5-4.5 5 4.5V11Z"/><path d="M4 10h1V7.5h2V10h1V6.5H4V10Z"/>
+              <svg class="breadсrumbs-icon" width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 .3 0 5.8V12h12V5.8L6 .3ZM11 11H1V6.2l5-4.5 5 4.5V11Z" />
+                <path d="M4 10h1V7.5h2V10h1V6.5H4V10Z" />
               </svg>
               <span class="visually-hidden">Главная</span>
             </a>
@@ -131,28 +128,26 @@
                     <span class="name-input">от</span>
                   </label>
                   <label class="catalog-filter-label">
-                     <input class="catalog-filter-input" value="9000" type="number" name="max-price">
-                     <span class="name-input">до</span>
+                    <input class="catalog-filter-input" value="9000" type="number" name="max-price">
+                    <span class="name-input">до</span>
                   </label>
                 </div>
                 <div class="range-basic">
-                    <div class="range-scale"></div>
-                    <div class="range-bar" style="left: 0px; width: 226px">
-                      <button class="range-toggle toggle-min" type="button">
-                        <span class="visually-hidden">Изменить минимальную цену.</span>
-                      </button>
-                      <button class="range-toggle toggle-max" type="button">
-                        <span class="visually-hidden">Изменить максимальную цену.</span>
-                      </button>
-                    </div>
+                  <div class="range-scale"></div>
+                  <div class="range-bar" style="left: 0px; width: 226px">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </fieldset>
             <div class="button-catalog">
-              <button class="button-catalog1" type="submit">
-                <span class="name">Применить</span>
-              </button>
-              <button class="button-catalog2" type="reset">Сбросить</button>
+              <button class="button-catalog-apply" type="submit">Применить</button>
+              <button class="button-catalog-discard" type="reset">Сбросить</button>
             </div>
           </div>
         </form>
@@ -187,17 +182,13 @@
           <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-img" src="../1910189-sedona-32/images/hotel/amara.jpg" alt="Отель Амара" width="180" height="120">
+                <img class="product-img" src="images/hotel/amara.jpg" alt="Отель Амара" width="180" height="120">
               </a>
               <h3 class="product-card-title">Amara Resort & Spa</h3>
               <span class="product-card-type">Гостиница</span>
               <span class="product-card-price">От 4000 ₽</span>
-              <a class="button product-card-button-details" href="#">
-                <span class="name">Подробнее</span>
-              </a>
-              <a class="button product-card-button-favorites" href="#">
-                <span class="name">В избранное</span>
-              </a>
+              <a class="button product-card-button-details" href="#">Подробнее</a>
+              <a class="button product-card-button-favorites" href="#">В избранное</a>
               <p class="product-card-rating-amara">
                 <span class="visually-hidden">Четыре звезды</span>
               </p>
@@ -205,17 +196,13 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-img" src="../1910189-sedona-32/images/hotel/desert.jpg" alt="Отель Пустыня" width="180" height="120">
+                <img class="product-img" src="images/hotel/desert.jpg" alt="Отель Пустыня" width="180" height="120">
               </a>
               <h3 class="product-card-title">Desert Quail Inn</h3>
               <span class="product-card-type">Мотель</span>
               <span class="product-card-price">От 3000 ₽</span>
-              <a class="button product-card-button-details" href="#">
-                <span class="name">Подробнее</span>
-              </a>
-              <a class="button product-card-button-favorites" href="#">
-                <span class="name">В избранное</span>
-              </a>
+              <a class="button product-card-button-details" href="#">Подробнее</a>
+              <a class="button product-card-button-favorites" href="#">В избранное</a>
               <p class="product-card-rating-quail">
                 <span class="visually-hidden">Три звезды</span>
               </p>
@@ -223,17 +210,13 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-img" src="../1910189-sedona-32/images/hotel/villas.jpg" alt="Вилла" width="180" height="120">
+                <img class="product-img" src="images/hotel/villas.jpg" alt="Вилла" width="180" height="120">
               </a>
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
               <span class="product-card-type">Апатраменты</span>
               <span class="product-card-price">От 2000 ₽</span>
-              <a class="button product-card-button-details" href="#">
-                <span class="name">Подробнее</span>
-              </a>
-              <a class="button product-card-button-chosen" href="#">
-                <span class="name">В избранном</span>
-              </a>
+              <a class="button product-card-button-details" href="#">Подробнее</a>
+              <a class="button product-card-button-chosen" href="#">В избранном</a>
               <p class="product-card-rating-diablo">
                 <span class="visually-hidden">Две звезды</span>
               </p>
@@ -241,56 +224,40 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-img" src="../1910189-sedona-32/images/hotel/greentree.jpg" alt="Отель Зеленые деревья" width="180" height="120">
+                <img class="product-img" src="images/hotel/greentree.jpg" alt="Отель Зеленые деревья" width="180"
+                  height="120">
               </a>
               <h3 class="product-card-title">GreenTree Inn</h3>
               <span class="product-card-type">Гостиница</span>
               <span class="product-card-price">От 3000 ₽</span>
-              <a class="button product-card-button-details" href="#">
-                <span class="name">Подробнее</span>
-              </a>
-              <a class="button product-card-button-favorites" href="#">
-                <span class="name">В избранное</span>
-              </a>
+              <a class="button product-card-button-details" href="#">Подробнее</a>
+              <a class="button product-card-button-favorites" href="#">В избранное</a>
               <p class="product-card-rating-greentree">
                 <span class="visually-hidden">Две звезды</span>
               </p>
               <p class="product-rating">Рейтинг: 9,2</p>
             </li>
           </ul>
-        </section>
-          <button class="button pagination-show-more" type="button">
-            <span class="name">Загрузить еще</span>
-          </button>
+          <button class="button pagination-show-more" type="button">Загрузить еще</button>
           <div class="pagination-container">
             <ul class="pagination">
               <li class="pagination-item-current">
                 <a class="button pagination-link-button pagination-current">1</a>
               </li>
               <li class="pagination-item">
-                <a class="button pagination-link-button" href="#">
-                  <span class="name">2</span>
-                </a>
+                <a class="button pagination-link-button" href="#">2</a>
               </li>
               <li class="pagination-item">
-                <a class="button pagination-link-button" href="#">
-                  <span class="name">3</span>
-                </a>
+                <a class="button pagination-link-button" href="#">3</a>
               </li>
               <li class="pagination-item">
-                <a class="button pagination-link-button" href="#">
-                  <span class="name">4</span>
-                </a>
+                <a class="button pagination-link-button" href="#">4</a>
               </li>
               <li class="pagination-item">
-                <a class="button pagination-link-button" href="#">
-                  <span class="name">...</span>
-                </a>
+                <a class="button pagination-link-button" href="#">...</a>
               </li>
               <li class="pagination-item">
-                <a class="button pagination-link-button" href="#">
-                  <span class="name">10</span>
-                </a>
+                <a class="button pagination-link-button" href="#">10</a>
               </li>
             </ul>
             <form class="sorting-type">
@@ -307,19 +274,19 @@
               </div>
             </form>
           </div>
-          <section class="news-inner">
-            <h2 class="newsletter-title-inner">Подпишитесь на рассылку</h2>
-            <p class="newsletter-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="visually-hidden" for="newslatter-email">Email</label>
-              <div class="newsletter-email">
-                <input class="field-inner" placeholder="Ваш e-mail" type="email" name="newslatter-email" id="newslatter-email">
-                <button class="button newsletter-button" type="submit">
-                  <span class="name">Подписаться</span>
-                </button>
-              </div>
-            </form>
-          </section>
+        </section>
+        <section class="news-inner">
+          <h2 class="newsletter-title-inner">Подпишитесь на рассылку</h2>
+          <p class="newsletter-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="newslatter-email">Email</label>
+            <div class="newsletter-email">
+              <input class="field-inner" placeholder="Ваш e-mail" type="email" name="newslatter-email"
+                id="newslatter-email">
+              <button class="button newsletter-button" type="submit">Подписаться</button>
+            </div>
+          </form>
+        </section>
       </div>
     </main>
     <footer class="page-footer-container">
@@ -328,24 +295,29 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button-social" href="#">
-              <svg class="social-icon" aria-hidden="true" focusable="false" width="18" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.6.2c1.8-.5 3.2.3 3.8 1.2.7-.2 1.4-.5 2.1-.7 0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6-.2 1-1.1 1.8-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9c1.9 1.9 4 3.6 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z"/>
+              <svg class="social-icon" aria-hidden="true" focusable="false" width="18" height="15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.6.2c1.8-.5 3.2.3 3.8 1.2.7-.2 1.4-.5 2.1-.7 0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6-.2 1-1.1 1.8-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9c1.9 1.9 4 3.6 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z" />
               </svg>
               <span class="visually-hidden">Твитер</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button-social" href="#">
-              <svg class="social-icon" aria-hidden="true" focusable="false" width="10" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7 0a4 4 0 0 0-4 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z"/>
+              <svg class="social-icon" aria-hidden="true" focusable="false" width="10" height="18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 0a4 4 0 0 0-4 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z" />
               </svg>
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button-social" href="#">
-              <svg class="social-icon" aria-hidden="true" focusable="false" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z"/>
+              <svg class="social-icon" aria-hidden="true" focusable="false" width="20" height="16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z" />
               </svg>
               <span class="visually-hidden">Ютуб</span>
             </a>
@@ -358,10 +330,13 @@
       </div>
       <a class="htmlacademy-link" href="https://htmlacademy.ru/">
         <svg class="htmlacademy-icon" width="115" height="33" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 12.9v2.6h2.5v-2.6H0Zm11.6-8.4c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9Zm15 .3h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2Zm14.5-.2c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3Zm6.7 8.1c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7Zm-18.9 7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22Zm10.9-2.3c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6Zm17.2-7.3c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6Zm13.2-9.2c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6Zm19.9-1.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4Zm11.2 9.1-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/>
+          <path
+            d="M0 12.9v2.6h2.5v-2.6H0Zm11.6-8.4c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9Zm15 .3h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2Zm14.5-.2c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3Zm6.7 8.1c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7Zm-18.9 7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22Zm10.9-2.3c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6Zm17.2-7.3c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6Zm13.2-9.2c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6Zm19.9-1.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4Zm11.2 9.1-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" />
         </svg>
         <span class="visually-hidden">.html academy</span>
       </a>
     </footer>
-  </body>
+  </div>
+</body>
+
 </html>
