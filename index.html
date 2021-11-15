@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="image/index/favicon.png">
 </head>
 <body>
   <div class="fon">
     <header class="page-header">
-      <nav>
+      <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
@@ -52,7 +53,7 @@
                     <h3 class="product-card-title-basket">Desert Quail Inn</h3>
                     <span class="product-card-type-basket">Мотель</span>
                   </div>
-                  <button class="basket">
+                  <button class="basket" type="button">
                     <svg class="basket-img" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z" />
@@ -68,7 +69,7 @@
                     <h3 class="product-card-title-basket">Villas at Poco Diablo</h3>
                     <span class="product-card-type-basket">Апартаменты</span>
                   </div>
-                  <button class="basket">
+                  <button class="basket" type="button">
                     <svg class="basket-img" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z"
@@ -222,7 +223,7 @@
   </div>
   <div class="modal-container">
     <div class="modal modal-seach">
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <svg class="close" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" />
         </svg>
@@ -267,17 +268,16 @@
             </svg>
           </div>
           <div class="field-group">
-            <label class="label-seach label-children" for="number-children">Дети:
-              <button class="info" type="button">
-                <span class="info-name">i</span>
-              </button>
-            </label>
+            <label class="label-seach label-children" for="number-children">Дети:</label>
+            <input class="seach-form-field children" type="text" id="number-children" name="number-children" value="1"
+              placeholder="">
+            <button class="info" type="button">
+              <span class="info-name">i</span>
+            </button>
             <div class="popover-info">
               <span class="content-info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
                 Дети до 6 лет размещаются бесплатно.</span>
             </div>
-            <input class="seach-form-field children" type="text" id="number-children" name="number-children" value="1"
-              placeholder="">
             <svg class="plus" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
             </svg>
@@ -286,7 +286,7 @@
             </svg>
           </div>
         </div>
-        <button class="seach-button">
+        <button class="seach-button" type="button">
           <span class="name-seach-modal">Найти</span>
         </button>
       </form>
